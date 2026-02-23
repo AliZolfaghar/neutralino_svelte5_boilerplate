@@ -1,0 +1,41 @@
+{
+  "applicationId": "js.neutralino.myapp",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/output/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "filesystem.*",
+    "window.*",
+    "computer.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "My App",
+      "width": 900,
+      "height": 600,
+      "minWidth": 400,
+      "minHeight": 300,
+      "enableInspector": false
+    }
+  },
+  "cli": {
+    "binaryName": "myapp",
+    "resourcesPath": "/output/",
+    "extensionsPath": "/extensions/",
+    "binaryVersion": "6.4.0",
+    "clientVersion": "6.4.0",
+    "frontendLibrary": {
+      "patchFile": "/index.html",
+      "projectPath": "/",
+      "devUrl": "http://localhost:5173",
+      "devCommand": "npm run dev:svelte",
+      "buildCommand": "npm run build:svelte"
+    }
+  }
+}
